@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center_horizontal">
+
+    <!-- Título Login -->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/Login"
+        android:textSize="32sp"
+        android:textColor="@color/characters"/>
+
+    <!-- Contenedor para campos -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+    <!-- Sección Nombre de Usuario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <!-- Etiqueta Nombre de Usuario -->
+        <TextView
+            android:id="@+id/usernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Nombre_de_Usuario"
+            android:textColor="@color/characters"/>
+
+        <!-- Campo Nombre de Usuario -->
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_background_edittext"
+            android:hint="@string/usuario"
+            android:importantForAutofill="yes"
+            android:autofillHints="username"
+            android:inputType="text"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <!-- Sección Contraseña -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <!-- Etiqueta Contraseña -->
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Constraseña"
+            android:textColor="@color/characters"/>
+
+        <!-- Campo Contraseña -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_background_edittext"
+            android:hint="@string/contraseña"
+            android:importantForAutofill="yes"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!-- Botones -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_marginTop="20dp"
+android:gravity="center_horizontal">
+
+<!-- Botón Inicio Sesión -->
+<Button
+    android:id="@+id/loginButton"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_background_bottom"
+    android:text="@string/Login"
+    android:textColor="@color/characters"/>
+
+<!-- Botón Registro -->
+<Button
+    android:id="@+id/registerButton"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background_bottom"
+    android:text="@string/Registrate"
+    android:textColor="@color/characters"/>
+</LinearLayout>
+
+    </LinearLayout>

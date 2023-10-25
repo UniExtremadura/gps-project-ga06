@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">Proyecto_ga06</string>
+    <string name="app_name">Be-Sports</string>
+    <string name="Login">Login</string>
+    <string name="Registro">Registro</string>
+    <string name="Nombre_de_Usuario">Nombre de Usuario</string>
+    <string name="Constraseña">Contraseña</string>
+    <string name="Registrate">Registrate</string>
+    <string name="Registrarse">Registrarse</string>
+    <string name="Iniciar_Sesión">Iniciar Sesión</string>
+    <string name="usuario">usuario</string>
+    <string name="contraseña">contraseña</string>
+    <string name="Email">Email</string>
+    <string name="Repetir_Constraseña">Repetir Contraseña</string>
+    <string name="Acepto_Politica">Acepto la política de uso de la aplicación</string>
+    <string name="Back_Botton">&lt;</string>
+    <string name="invalid_email">Email no válido</string>
+    <string name="password_requirements">La contraseña debe incluir al menos una letra mayúscula, una letra minúscula, un número y un símbolo</string>
+    <string name="passwords_do_not_match">Las contraseñas no coinciden</string>
+    <!-- Requisitos de contraseña para el checklist -->
+    <string name="check_uppercase">Letra mayúscula</string>
+    <string name="check_lowercase">Letra minúscula</string>
+    <string name="check_number">Número</string>
+    <string name="check_symbol">Símbolo (ejemplo: @#$%^+=)</string>
+    <string name="check_length">Longitud (mínimo 8 caracteres)</string>
 </resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="36dp">
+
+        <!-- Botón de flecha hacia atrás -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Back_Botton"
+            android:textSize="24sp"
+            android:padding="18dp"
+            android:textColor="@color/characters"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Contenedor central -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:maxWidth="300dp"
+            android:layout_gravity="center">
+
+            <!-- Título: Registro -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Registro"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/characters"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Campo: Nombre de Usuario -->
+            <EditText
+                android:id="@+id/etUsername"
+                android:background="@drawable/rounded_background_edittext"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:maxWidth="300dp"
+                android:hint="@string/Nombre_de_Usuario"
+                android:inputType="text"
+                android:autofillHints="username"
+                android:layout_marginBottom="24dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:drawablePadding="8dp"/>
+
+            <!-- Campo: Email -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:background="@drawable/rounded_background_edittext"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:maxWidth="300dp"
+                android:hint="@string/Email"
+                android:inputType="textEmailAddress"
+                android:autofillHints="emailAddress"
+                android:layout_marginBottom="24dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:drawablePadding="8dp"/>
+
+            <!-- Campo: Contraseña -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:background="@drawable/rounded_background_edittext"
+                android:drawableEnd="@drawable/ic_eye_off"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:maxWidth="300dp"
+                android:hint="@string/Constraseña"
+                android:inputType="textPassword"
+                android:autofillHints="password"
+                android:layout_marginBottom="24dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:drawablePadding="8dp"/>
+
+            <TextView
+                android:id="@+id/tvPasswordError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/Caution"
+                android:visibility="gone" />
+
+            <!-- Campo: Validar Contraseña -->
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:background="@drawable/rounded_background_edittext"
+                android:drawableEnd="@drawable/ic_eye_off"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:maxWidth="300dp"
+                android:hint="@string/Repetir_Constraseña"
+                android:inputType="textPassword"
+                android:autofillHints="password"
+                android:layout_marginBottom="24dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:drawablePadding="8dp"/>
+
+            <TextView
+                android:id="@+id/tvConfirmPasswordError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Caution"
+                android:visibility="gone" />
+
+            <!-- Checkbox: Acepto la política de uso -->
+            <CheckBox
+                android:id="@+id/cbAcceptTerms"
+                android:textColor="@color/characters"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:maxWidth="300dp"
+                android:padding="24dp"
+                android:text="@string/Acepto_Politica"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Botón: Registrarse -->
+            <Button
+                android:id="@+id/btnRegister"
+                android:background="@drawable/rounded_background_bottom"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:maxWidth="300dp"
+                android:text="@string/Registrarse"
+                android:textColor="@color/characters"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
